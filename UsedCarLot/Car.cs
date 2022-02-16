@@ -13,6 +13,14 @@ namespace UsedCarLot
         public int Year { get; set; }
         public decimal Price { get; set; }
 
+        public Car()
+        {
+            Make = "";
+            Model = "";
+            Year = 0;
+            Price = 0.0m;
+        }
+
         public Car(string _make, string _model, int _year, decimal _price)
         {
             Make = _make;
@@ -22,7 +30,7 @@ namespace UsedCarLot
         }
         public override string ToString()
         {
-            return $"Make: {Make}, Model: {Model}, Year: {Year}, Price: {Price}";
+            return $"{Make}, {Model}, {Year}, {Price}";
         }
     }
 }

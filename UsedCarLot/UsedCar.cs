@@ -16,7 +16,7 @@ namespace UsedCarLot
         }
         public override string ToString()
         {
-            return base.ToString() + $" (used) Milage: {Milage}";
+            return base.ToString() + $" Miles: {Milage}";
         }
     }
 }
